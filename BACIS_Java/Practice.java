@@ -1,16 +1,37 @@
 public class Practice{
     public static void main(String[] args){
-        int n = 4;
-        int i = 1;
-        int j = 1;
-        for(i= n;i >= 1;i--){
-            for(j=1;j<=n-i;j++){
-                System.out.print("  ");
+        int[] nums = {555,901,482,1771};
+       int ans = findNumbers(nums);
+       System.out.println("The even number of digite is: "+ans);
+    }
+     public static int findNumbers(int[] nums) {
+        int count = 0;
+        for(int num:nums){
+            if(even(num)){
+                count++;
             }
-            for(j = 1;j <= i;j++){
-                System.out.print("* ");
-            }
-            System.out.println();
         }
+        return count;
+    }
+    public static boolean even(int num){
+        int numberOfDigite = digite(num);
+        if(numberOfDigite % 2 == 0){
+            return true;
+        }
+        return false;
+    }
+    public static int digite(int num){
+        if(num < 0){
+            num = num* -1;
+        }
+        if(num == 0){
+            return 1;
+        }
+        int count = 0;
+        while(num>0){
+            count++;
+            num = num/10;
+        }
+        return count;
     }
 }
