@@ -15,9 +15,19 @@ public class Reverse_Number{
 
         We use Both method to solve this ans;
         */
-        int ans = 0;
+       /* int ans = 0;
         while(n>0){
             int rev_Digit = n % 10;
+            ans = ans*10 + rev_Digit;
+            n = n/10;
+        }
+        */
+        int ans = 0;
+        while(n!=0){
+            int rev_Digit = n % 10;
+           /* if(ans > Integer.MAX_VALUE/10 || ans < Integer.MIN_VALUE/10){
+                System.out.print(0);
+            }*/
             ans = ans*10 + rev_Digit;
             n = n/10;
         }
