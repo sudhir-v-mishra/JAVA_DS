@@ -20,24 +20,45 @@ public class First_LastElement_Array{
         int[] arr = {5,7,7,8,8,10};
         System.out.print("Enter the target element:");
         int target = obj.nextInt();
-        int n = arr.length;
-        int i = 0;
-        firstAndLastElement(arr,target,n,i);
-        System.out.print(first+",");
-        System.out.println(last);
+        System.out.print(firstSearch(arr,target)+" ");
+        System.out.println(lastSearch(arr,target));
     }
-   public static void firstAndLastElement(int[] arr,int target,int n,int i){
-    if(i==n){
-        return;
-    }
-    if(arr[i] == target){
-        if(first == -1){
-            first = i;
+   public static int firstSearch(int[] arr,int target){
+    int start = 0;
+    int end = arr.length;
+    int ans = -1;
+    while(start<=end){
+        int mid = (start+end)/2;
+        if(target == arr[mid]){
+            ans = mid;
+            end = mid-1;
+        }
+        else if(target<arr[mid]){
+            end = mid-1;
         }
         else{
-            last = i;
+            start = mid+1;
         }
     }
-    firstAndLastElement(arr,target,n,i+1);
+    return ans;
+   }
+   public static int lastSearch(int[] arr,int target){
+     int start = 0;
+    int end = arr.length;
+    int ans = -1;
+    while(start<=end){
+        int mid = (start+end)/2;
+        if(target == arr[mid]){
+            ans = mid;
+            start = mid+1;
+        }
+        else if(target<arr[mid]){
+            end = mid-1;
+        }
+        else{
+            start = mid+1;
+        }
+    }
+    return ans;
    }
 }
