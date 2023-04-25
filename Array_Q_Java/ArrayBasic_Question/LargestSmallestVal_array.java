@@ -10,6 +10,7 @@ public class LargestSmallestVal_array{
         for(int i=0;i<arr.length;i++){
             arr[i] = in.nextInt();
         }
+        in.close();
         int largest = 0;
         int smallest = 0;
         for(int i=0;i<n;i++){

@@ -21,6 +21,7 @@ public class ArrayRotation_d_Position{
         }
         System.out.print("Enter the position to reverse the array: ");
         int d = in.nextInt();
+        in.close();
         rotation(arr,d,n);
         printArray(arr,n);
     }

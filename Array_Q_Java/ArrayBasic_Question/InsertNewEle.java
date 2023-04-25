@@ -14,6 +14,7 @@ public class InsertNewEle{
         int pos = in.nextInt();
         System.out.println("Enter the new element:");
         int item = in.nextInt();
+        in.close();
         for(int i=n-1;i>=pos;i--){
             arr[i+1]=arr[i];
         }

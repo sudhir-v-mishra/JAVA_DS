@@ -11,6 +11,7 @@ public class DeleteEle_Array{
         }
         System.out.print("Enter the position to Delete the item:");
         int pos = in.nextInt();
+        in.close();
         for(int i=pos-1;i<n-1;i++){
             arr[i]=arr[i+1];
         }

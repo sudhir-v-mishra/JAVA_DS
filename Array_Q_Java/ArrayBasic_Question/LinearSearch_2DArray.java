@@ -16,6 +16,7 @@ public class LinearSearch_2DArray{
         }
         System.out.print("Enter the search element: ");
         int search = in.nextInt();
+        in.close();
         int[] ans = search2DArray(arr,search);
         System.out.println(Arrays.toString(ans));
        

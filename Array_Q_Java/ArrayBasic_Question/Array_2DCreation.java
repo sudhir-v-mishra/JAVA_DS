@@ -10,6 +10,7 @@ public class Array_2DCreation{
                 arr[row][col] = in.nextInt();
             }
         }
+        in.close();
         /*for(int row=0;row<arr.length;row++){
             System.out.println(Arrays.toString(arr[row]));
         }*/

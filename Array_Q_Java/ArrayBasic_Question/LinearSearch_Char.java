@@ -7,6 +7,7 @@ public class LinearSearch_Char{
         String str = in.nextLine();
         System.out.println("Enter the search element: ");
         char search = in.next().charAt(0);
+        in.close();
         
        int ans = stringSearch(str,search);
        if(ans == -1){

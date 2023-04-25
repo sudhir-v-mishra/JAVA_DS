@@ -7,7 +7,7 @@ public class CreateArray{
         for(int i=0;i<arr.length;i++){
             arr[i] = in.nextInt();
         }
-
+        in.close();
         /*for(int num : arr){
             System.out.print(num+" ");
           }

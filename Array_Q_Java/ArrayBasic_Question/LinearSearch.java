@@ -11,6 +11,7 @@ public class LinearSearch{
         }
         System.out.print("Enter the Search Element:");
         int search = in.nextInt();
+        in.close();
         int ans =  l_Search(arr,search);
         if(ans == -1){
         System.out.println("Element not found:");

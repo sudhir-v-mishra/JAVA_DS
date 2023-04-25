@@ -17,6 +17,7 @@ public class FindEven_InArray{
         int[] nums = {555,901,482,1771};
        int ans = findNumbers(nums);
        System.out.println("The even number of digite is: "+ans);
+       in.close();
     }
     public static int findNumbers(int[] nums) {
         int count = 0;

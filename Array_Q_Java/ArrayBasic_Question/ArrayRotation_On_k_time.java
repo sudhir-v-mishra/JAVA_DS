@@ -23,6 +23,7 @@ public class ArrayRotation_On_k_time{
         }
         System.out.print("Enter the number to rotate the array: ");
         int d = in.nextInt();
+        in.close();
         rotation(arr,d,n);
     }
     public static void rotation(int arr[],int k,int n){
