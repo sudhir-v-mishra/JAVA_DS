@@ -9,6 +9,7 @@ public class Bubble_sort {
         for(int i=0;i<n;i++){
             arr[i] = in.nextInt();
         }
+        in.close();
         bubbleSort(arr);
         System.out.println(Arrays.toString(arr));
     }
