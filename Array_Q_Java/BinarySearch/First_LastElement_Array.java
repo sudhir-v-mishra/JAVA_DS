@@ -20,6 +20,7 @@ public class First_LastElement_Array{
         int[] arr = {5,7,7,8,8,10};
         System.out.print("Enter the target element:");
         int target = obj.nextInt();
+        obj.close();
         System.out.print(firstSearch(arr,target)+" ");
         System.out.println(lastSearch(arr,target));
     }

@@ -13,8 +13,9 @@ public class CeilingArray_BinarySearch{
         }
         System.out.print("Enter the target value:");
         int target = in.nextInt();
+        in.close();
         int ans = ceilingArray(arr , target);
-            System.out.println("Element is found: "+ans);
+        System.out.println("Element is found: "+ans);
     }
     public static int ceilingArray(int[] arr,int target){
         int start = 0;

@@ -12,6 +12,7 @@ public class RotatedBinarySearchWithDublicate_value{
         for(int i=0;i<arr.length;i++){
             arr[i]=in.nextInt();
         }
+        in.close();
         int ans = findNumberOfRotation(arr);
         System.out.println("The number of rotation is:"+(ans+1));
 

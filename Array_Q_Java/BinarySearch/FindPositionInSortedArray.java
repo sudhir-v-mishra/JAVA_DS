@@ -7,6 +7,7 @@ public class FindPositionInSortedArray{
         ,100,130,140,160,170};
         System.out.print("Enter the target element: ");
         int target = obj.nextInt();
+        obj.close();
         System.out.println(actualAns(arr,target));
     }
     public static int actualAns(int[] arr,int target){

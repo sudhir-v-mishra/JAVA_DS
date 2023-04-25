@@ -11,6 +11,7 @@ public class BinarySearch{
         }
         System.out.print("Enter the search element:");
         int search = in.nextInt();
+        in.close();
         int ans = binarySearch(arr,search);
         if(ans == -1){
             System.out.println("Element not found:");

@@ -13,6 +13,7 @@ public class BinarySearch2{
         }
         System.out.print("Enter the search element:");
         int search = in.nextInt();
+        in.close();
         int ans = binarySearch2(arr,search);
         if(ans == -1){
             System.out.println("Element not found:");
